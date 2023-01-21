@@ -5,12 +5,19 @@ The tests are 2 types:
 2. test 4 to 1001 : encrypt/decrypt (which tests the encryption without paying any attention to the right output).
 
 The right path for the files:
+
 :
+
 :
+
 ├── tests/
+
 |     └── ...
+
 ├── ex5.py
+
 ├── script.py
+
 └── ....
 
 to run the test use this command: python3.6 scrip.py.
