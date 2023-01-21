@@ -1,0 +1,8 @@
+{
+    "type": "Vigenere",
+    "mode": "encrypt",
+    "key": [
+        -177,
+        -831
+    ]
+}
