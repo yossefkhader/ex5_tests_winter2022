@@ -3,10 +3,12 @@ import shutil
 import filecmp
 import difflib
 from ex5 import proccessDiretory
+#to keep the output files comment the last block of code in the file
 
-NUM_OF_TESTS = 1001
+#Change it for the number of test you want. (up to 1001)
+NUM_OF_TESTS = 10
+
 testCounter = 0
-
 for num in range(NUM_OF_TESTS):
     passed = True
     dirpath1 = os.path.join('tests', "test{}e".format(num))
@@ -106,6 +108,8 @@ else:
 
 
 
+#__________________________________________________________________________
+#comment next lines to keep the output files
 
 for num in range(NUM_OF_TESTS) :
     dirpath1 = os.path.join('tests', "test{}e".format(num))
