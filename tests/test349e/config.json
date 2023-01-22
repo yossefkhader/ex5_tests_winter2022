@@ -1,5 +1,5 @@
 {
-    "type": "Caeser",
+    "type": "Caesar",
     "mode": "encrypt",
     "key": 816
 }
