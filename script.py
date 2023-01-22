@@ -2,7 +2,7 @@ import os
 import shutil
 import filecmp
 import difflib
-from ex5 import proccessDiretory
+from ex5 import processDirectory
 #to keep the output files comment the last block of code in the file
 
 #Change it for the number of test you want. (up to 1001)
@@ -17,7 +17,7 @@ for num in range(NUM_OF_TESTS):
     print("____________________________________")
     print("test no.{}:".format(num),end=" ")
 
-    proccessDiretory(dirpath1)
+    processDirectory(dirpath1)
     
     if num in [0,1,2,3] :
         out_file = os.path.join(dirpath1, "test{}.enc".format(num))
@@ -43,7 +43,7 @@ for num in range(NUM_OF_TESTS):
         dst_file = os.path.join(dirpath2, "test{}.enc".format(num))
         shutil.copy(src_file, dst_file)
         
-        proccessDiretory(dirpath2)
+        processDirectory(dirpath2)
 
         
         file1 = os.path.join(dirpath1, "test{}.txt".format(num))
@@ -72,7 +72,7 @@ for num in range(NUM_OF_TESTS):
                 dst_file = os.path.join(dirpath2, elem)
                 shutil.copy(src_file, dst_file)
         
-        proccessDiretory(dirpath2)
+        processDirectory(dirpath2)
         for elem in os.listdir(dirpath1) :
             if elem.endswith(".txt") :
                 file1 = os.path.join(dirpath1, elem)
