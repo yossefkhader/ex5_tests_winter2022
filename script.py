@@ -28,13 +28,13 @@ for num in range(NUM_OF_TESTS):
         except: 
             passed = False
             print("FAILED :( -> File Not Found!")
-            print("in comparing: {} - {}".format(file1,file2))
+            print("in comparing: {} - {}".format(out_file,exp_file))
         if not result:
             passed = False
             print("FAILED :(")
-            with open(file1, "r") as f1:
+            with open(out_file, "r") as f1:
                 text1 = f1.readlines()
-            with open(file2, "r") as f2:
+            with open(exp_file, "r") as f2:
                 text2 = f2.readlines()
             diff = difflib.unified_diff(text1, text2)
             print("\n".join(diff))
